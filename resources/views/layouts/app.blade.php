@@ -80,7 +80,36 @@
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
       </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+<!--              <img src="dist/img/logo-140.png" class="user-image" alt="User Image">-->
+                <i class="fa fa-user"></i><span class="hidden-xs">{{ Auth::user()->name }}</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                </div>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-right">
+                    <!--<form action="{{ url('/logout') }}" method="post" id="from_logout"></form>-->
+                    {!! Form::open(['url'=>'logout']) !!}
+                        
+                    {!! Form::close() !!}
+                    <a href="javascript:void(0)" onclick="$(this).prev().submit();" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
 
+        </ul>
+      </div>
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
