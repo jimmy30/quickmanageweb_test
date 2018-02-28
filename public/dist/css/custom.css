@@ -1,0 +1,79 @@
+.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate
+{
+	padding:10px;
+}
+
+.dataTables_filter input{
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.box.box-primary{
+    padding: 30px 15px 30px 15px;  
+}
+
+
+.nav-tabs-custom>.nav-tabs>li>a{
+    color: #b8c7ce !important;
+}
+
+.nav-tabs-custom>.nav-tabs>li.active a{
+    color: #444 !important;
+}
+
+.message-box{
+    display: inline-block;
+    width: 95%;
+    height: 400px;
+    overflow-y: scroll;
+    border: solid 1px #ccc;
+    padding: 10px;
+    
+}
+
+.message-box li{
+    margin-bottom: 20px;
+    vertical-align: text-top;
+}
+
+.text-box1{
+    text-align: left;
+    display: inline-block;
+    width: 95%;
+}
+
+.login-page {
+    background-image: url(../img/login-bg.jpg);
+    background-size: 1600px;
+    background-position: center;
+}
+
+.nbp{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+span.error{color: red;}
+
+@media (min-width:1600px)
+{
+    .login-page {
+        background-size: 100%;
+    }
+}
+
+.from_hour, .to_hour, .from_min, .to_min {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+}
